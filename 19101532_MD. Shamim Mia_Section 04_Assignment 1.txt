@@ -1,0 +1,93 @@
+1. creating a file in desktop
+commands:
+shamimmsas7@ShamimMSAS7:~$ cd Desktop
+shamimmsas7@ShamimMSAS7:~/Desktop$ cat > excalibur.txt
+
+outputs:(after giving command "shamimmsas7@ShamimMSAS7:~/Desktop$ ls" to show)
+excalibur.txt
+
+
+#changing the permission of the file
+commands:
+shamimmsas7@ShamimMSAS7:~/Desktop$ ls -l
+shamimmsas7@ShamimMSAS7:~/Desktop$ chmod 751 excalibur.txt
+
+outputs: (after giving command "shamimmsas7@ShamimMSAS7:~/Desktop$ ls -l" to show)
+total 4
+-rwxr-x--x 1 shamimmsas7 shamimmsas7 9 Jul  8 17:47 excalibur.txt
+
+
+#creating a directory
+commands:
+shamimmsas7@ShamimMSAS7:~/Desktop$ mkdir mydirectory
+
+outputs: (after giving command "shamimmsas7@ShamimMSAS7:~/Desktop$ ls" to show)
+excalibur.txt  mydirectory
+
+
+#copying the file to a directory
+commands:
+shamimmsas7@ShamimMSAS7:~/Desktop$ cp excalibur.txt mydirectory
+
+outputs: (after giving command "shamimmsas7@ShamimMSAS7:~/Desktop/mydirectory$ ls" to show)
+excalibur.txt
+
+
+#deleting the file from desktop
+commands:
+shamimmsas7@ShamimMSAS7:~/Desktop$ rm excalibur.txt
+
+outputs:(after giving command "shamimmsas7@ShamimMSAS7:~/Desktop$ ls" to show)
+mydirectory
+
+
+
+2. deleting all the files and folders from a directory
+commands:
+shamimmsas7@ShamimMSAS7:~/Desktop/mydirectory$ rm -r *
+
+outputs:(after giving command "shamimmsas7@ShamimMSAS7:~/Desktop/mydirectory$ ls" to show and it doesn't show anything as the directory is empty now)
+
+
+
+3. finding all the txt file in a directory
+commands:
+shamimmsas7@ShamimMSAS7:~/Desktop/mydirectory$ ls *.txt
+
+outputs:
+a.txt  b.txt
+
+
+
+4.checking for a given string in multiple files
+commands:(I have put some file names instead of * at the end as the question mentioned about multiple files, not all files)
+shamimmsas7@ShamimMSAS7:~/Desktop/mydirectory$ grep "shamim" a.txt b.txt
+
+outputs:
+a.txt:I am shamim ahmad
+a.txt:and shamim is my nickname
+b.txt:shamim added the lyrics of mansion in file a
+
+
+5. showing only lines 12-18 of a txt file
+commands: 
+shamimmsas7@ShamimMSAS7:~/Desktop/mydirectory$ sed -n '12,18p' a.txt
+
+Outputs:
+Insidious is blind inception
+What's reality with all these questions?
+Feels like I missed my alarm and slept in
+Slept in
+Broken legs but I chase perfection
+These walls are my blank expression
+My mind is a home I'm trapped in
+
+
+
+6. showing all the files in a directory(including hidden files)
+commands:
+shamimmsas7@ShamimMSAS7:~/Desktop/mydirectory$ ls -a
+
+outputs:
+ .   ..   a.txt   new   ok.txt  'Untitled 1.docx'
+

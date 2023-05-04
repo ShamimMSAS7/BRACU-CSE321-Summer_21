@@ -1,0 +1,56 @@
+1. creating a file in desktop
+commands:
+user@user:~$ cd Desktop
+user@user:~/Desktop$ cat > excalibur.txt
+
+
+#changing the permission of the file
+commands:
+user@user:~/Desktop$ ls -l
+user@user:~/Desktop$ chmod 751 excalibur.txt
+
+
+#creating a directory
+commands:
+user@user:~/Desktop$ mkdir mydirectory
+
+
+#copying the file to a directory
+commands:
+user@user:~/Desktop$ cp excalibur.txt mydirectory
+
+
+#deleting the file from desktop
+commands:
+user@user:~/Desktop$ rm excalibur.txt
+
+
+
+2. deleting all the files and folders from a directory
+commands:
+user@user:~/Desktop/mydirectory$ rm -r *
+
+
+
+3. finding all the txt file in a directory
+commands:
+user@user:~/Desktop/mydirectory$ ls *.txt
+
+
+
+4.checking for a given string in multiple files
+commands:
+user@user:~/Desktop/mydirectory$ grep "shamim" a.txt b.txt
+
+
+
+5. showing only lines 12-18 of a txt file
+commands: 
+user@user:~/Desktop/mydirectory$ sed -n '12,18p' a.txt
+
+
+
+6. showing all the files in a directory(including hidden files)
+commands:
+user@user:~/Desktop/mydirectory$ ls -a
+

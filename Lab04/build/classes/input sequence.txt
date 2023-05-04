@@ -1,0 +1,25 @@
+Please, enter the inputs for the tasks in these formats. These data are from the given assignment. You can change them and it will provide with the correct results but maintain the sequence and formation. Thanks.
+
+For task 1(SJF):
+4
+p1 0 8
+p2 1 4
+p3 2 9
+p4 3 5
+
+
+For task 2(priority):
+5
+p1 0 10 3
+p2 0 1 1
+p3 0 2 4
+p4 0 1 5
+p5 0 5 2
+
+
+for task 3(round robin):
+4
+3
+p1 0 24
+p2 0 3
+p3 0 3
